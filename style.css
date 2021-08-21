@@ -1,0 +1,115 @@
+:root {
+  --color-orange: #e28525;
+  --color-light-green: #016972;
+  --color-dark-green: #00403f;
+
+  font-size: 62.5%;
+}
+
+/* /////////////////////
+      GLOBAL
+//////////////////// */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  border-radius: 2rem;
+
+  min-width: 365px;
+
+  overflow: hidden;
+
+  margin: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  align-items: flex-start;
+
+  padding: 5rem;
+
+  color: rgb(226, 225, 225);
+}
+
+/* /////////////////////
+      CARDS
+//////////////////// */
+
+.sedans {
+  background-color: var(--color-orange);
+}
+
+.suvs {
+  background-color: var(--color-light-green);
+}
+
+.luxury {
+  background-color: var(--color-dark-green);
+}
+
+.icon {
+  margin-bottom: 4rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+
+  margin-bottom: 4rem;
+}
+
+.info {
+  line-height: 1.5;
+
+  max-width: 20rem;
+
+  margin-bottom: 9rem;
+}
+
+/* /////////////////////
+      BTN
+//////////////////// */
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+
+  font-size: 2rem;
+  padding: 0.8em 2em;
+}
+
+.orange {
+  color: var(--color-orange);
+}
+.light {
+  color: var(--color-light-green);
+}
+.dark {
+  color: var(--color-dark-green);
+}
