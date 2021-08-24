@@ -26,7 +26,6 @@ body {
   font-size: 1.5rem;
 
   width: 100vw;
-  height: 100vh;
 }
 
 .container {
@@ -86,9 +85,23 @@ body {
 .info {
   line-height: 1.5;
 
-  max-width: 20rem;
+  max-width: 25rem;
 
   margin-bottom: 9rem;
+}
+
+/* /////////////////////
+    CARD VARIANTS
+//////////////////// */
+
+.orange {
+  color: var(--color-orange);
+}
+.light {
+  color: var(--color-light-green);
+}
+.dark {
+  color: var(--color-dark-green);
 }
 
 /* /////////////////////
@@ -102,14 +115,11 @@ body {
 
   font-size: 2rem;
   padding: 0.8em 2em;
+
+  cursor: pointer;
 }
 
-.orange {
-  color: var(--color-orange);
-}
-.light {
-  color: var(--color-light-green);
-}
-.dark {
-  color: var(--color-dark-green);
+.btn:hover,
+.btn:focus {
+  opacity: 0.65;
 }
